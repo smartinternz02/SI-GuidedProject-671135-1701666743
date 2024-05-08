@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Segmentation Analysis Using ML</title>
+</head>
+<body>
+    <form action="/predict" method="post">
+        <label>Age</label><input type="text" name="Age" required="True"><br>
+        <label for="yummy">Yummy</label>
+        <select name="yummy">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+        </select><br>
+        <label for="convenient">Convenient</label>
+        <select name="convenient">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+        </select><br>
+        <label for="spicy">Spicy</label>
+        <select name="spicy">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+        </select><br>
+        <label for="fattening">Fattening</label>
+        <select name="fattening">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+        </select><br>
+        <label for="greasy">Greasy</label>
+        <select name="greasy">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+        </select><br>
+        <label for="fast">Fast</label>
+        <select name="fast">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+        </select><br>
+        <label for="cheap">Cheap</label>
+        <select name="cheap">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+        </select><br>
+        <label for="tasty">Tasty</label>
+        <select name="tasty">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+        </select><br>
+        <label for="expensive">Expensive</label>
+        <select name="expensive">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+        </select><br>
+        <label for="healthy">Healthy</label>
+        <select name="healthy">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+        </select><br>
+        <label for="disgusting">disgusting</label>
+        <select name="disgusting">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+        </select><br>
+        
+        <label for="Gender">Gender</label>
+        <select name="Gender">
+        <option value="1">Male</option>
+        <option value="0">Female</option>
+        </select><br>
+        <input type="submit" name="Submit">
+        <br>
+        <h4>Rating:{{predict}}</h4>
+    </form>
+</body>
+</html>
